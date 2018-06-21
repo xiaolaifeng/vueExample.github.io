@@ -7,6 +7,14 @@ https://www.cnblogs.com/Zcqian/p/6843787.html
 http://www.cnblogs.com/zzcit/p/6053240.html
 
 https://cn.vuejs.org/v2/guide/syntax.html
+### 技术栈
+**Vue 2.0
+**vue-router
+**vuex
+**axios
+**vue-material
+**webpack
+**mock.js
 
 ### 什么是 Vue
 
@@ -76,7 +84,8 @@ export default {
   }
 }
  ```
- ### 实例多重组件嵌套
+ ### 实例
+ **多重组件嵌套**
 template-inner.html
 ```markdown
 <!DOCTYPE html>
@@ -139,8 +148,8 @@ component.js
 ```
 
 ###  单前端开发+前后端联调+测试环境发布+生成环境发布
-**单前端开发 需要使用mock模拟后端server服务，服务器请求地址为空，配置方式**
-inor-tempalte/config/dev.env.js
+**单前端开发 需要使用mock模拟后端server服务，服务器请求地址为空，**
+配置方式 inor-tempalte/config/dev.env.js
 ```markdown
 var merge = require('webpack-merge')
 var prodEnv = require('./prod.env')
@@ -164,7 +173,7 @@ module.exports = {
 }
 
 ```
-### springboot +vue
+## springboot +vue
 将vue模板打包到dist的文件复制到springboot/src/main/resources下static与templates中
 copy后文件目录如下
 ```markdown
@@ -228,5 +237,34 @@ npm install webpack webpack-cli --save-dev
    ```markdown
 	npx webpack --config webpack.config.js
    ```
+# 什么是axios
+axios 是一个基于Promise 用于浏览器和 nodejs 的 HTTP 客户端，它本身具有以下特征：
 
+    从浏览器中创建 XMLHttpRequest
+    从 node.js 发出 http 请求
+    支持 Promise API
+    拦截请求和响应
+    转换请求和响应数据
+    取消请求
+    自动转换JSON数据
+    客户端支持防止 CSRF/XSRF
+    
+    https://www.cnblogs.com/libin-1/p/6607945.html
+# 什么是Promise
+Promise 是异步编程的一种解决方案，比传统的解决方案–回调函数和事件－－更合理和更强大。它由社区最早提出和实现，ES6将其写进了语言标准，统一了语法，原生提供了Promise
+
+所谓Promise ，简单说就是一个容器，里面保存着某个未来才回结束的事件(通常是一个异步操作）的结果。从语法上说，Promise是一个对象，从它可以获取异步操作的消息。
+Promise 对象的状态不受外界影响
+
+https://blog.csdn.net/MrJavaweb/article/details/79475949
+# 什么是Vuex 
+Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。Vuex 也集成到 Vue 的官方调试工具 devtools extension，提供了诸如零配置的 time-travel 调试、状态快照导入导出等高级调试功能。
+    
+    https://vuex.vuejs.org/zh/guide/
+ ## 什么情况下我应该使用 Vuex？
+ 虽然 Vuex 可以帮助我们管理共享状态，但也附带了更多的概念和框架。这需要对短期和长期效益进行权衡。
+
+如果您不打算开发大型单页应用，使用 Vuex 可能是繁琐冗余的。确实是如此——如果您的应用够简单，您最好不要使用 Vuex。一个简单的 global event bus 就足够您所需了。但是，如果您需要构建一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理状态，Vuex 将会成为自然而然的选择。
+ ## vue+vuex+axios实现登录拦截   
+    https://blog.csdn.net/generon/article/details/72848158
 
