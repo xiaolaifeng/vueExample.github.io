@@ -76,8 +76,7 @@ export default {
   }
 }
  ```
-###实例
-多重组件嵌套
+ ### 实例多重组件嵌套
 template-inner.html
 ```markdown
 <!DOCTYPE html>
@@ -139,8 +138,8 @@ component.js
 })()
 ```
 
-###单前端开发+前后端联调+测试环境发布+生成环境发布
-**Bold**单前端开发 需要使用mock模拟后端server服务，服务器请求地址为空，配置方式
+###  单前端开发+前后端联调+测试环境发布+生成环境发布
+**单前端开发 需要使用mock模拟后端server服务，服务器请求地址为空，配置方式**
 inor-tempalte/config/dev.env.js
 ```markdown
 var merge = require('webpack-merge')
